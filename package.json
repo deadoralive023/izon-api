@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "graphql-playground-middleware-lambda": "^1.7.23"
+  }
+}

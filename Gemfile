@@ -25,6 +25,13 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+#  -----------------
+gem 'graphql'
+gem 'rack-cors'
+gem 'hirb'
+
+gem 'graphql_devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -37,8 +44,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+
+
 gem 'graphql'
 gem 'rack-cors'
 gem 'hirb'
 
 gem "graphiql-rails", "~> 1.7"
+

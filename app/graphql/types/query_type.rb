@@ -3,5 +3,9 @@ module Types
     field :categories, resolver: Queries::Categories
     field :category, resolver: Queries::Category
     field :products, resolver: Queries::Products
+    field :users, resolver: Queries::Users
+    field :user, resolver: Queries::User
+
+
   end
 end

@@ -45,3 +45,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
+
+
+gem 'graphql'
+gem 'rack-cors'
+gem 'hirb'
+
+gem "graphiql-rails", "~> 1.7"
+

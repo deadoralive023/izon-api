@@ -81,6 +81,9 @@ GEM
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.7.0)
+      railties
+      sprockets-rails
     graphql (1.12.12)
     graphql_devise (0.16.0)
       devise_token_auth (>= 0.1.43, < 2.0)
@@ -174,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  graphiql-rails (~> 1.7)
   graphql
   graphql_devise
   hirb

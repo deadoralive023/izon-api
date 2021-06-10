@@ -5,6 +5,8 @@ module Types
     field :products, resolver: Queries::Products
     field :users, resolver: Queries::Users
     field :user, resolver: Queries::User
+    field :cart, resolver: Queries::Cart
+
 
 
   end

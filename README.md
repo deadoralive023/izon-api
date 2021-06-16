@@ -47,3 +47,66 @@
     }
   }
 }
+
+{
+  cart(userId: 1) {
+      id
+    	subTotal
+  		itemsCount
+      items {
+        id
+        quantity
+        price
+        product 
+        {
+          name
+          price
+          stock
+          imageUrl
+  
+        }
+        productId
+    }
+  }
+}
+
+
+mutation {
+  ChangeItemQuantity(input: { params: { item_id:1 , quantity:77 }}) {
+    item {
+      id
+      quantity
+      price
+    }
+  }
+}
+
+mutation{
+  ChangeItemQuantity(input: {
+    item_id:1  
+    quantity:77
+  }){
+    item {
+      id
+      quantity
+      price
+    }
+    
+  }
+}
+
+
+
+mutation{
+  changeItemQuantity(input: {
+    itemId: 1  
+    quantity:77
+  }){
+    item {
+      id
+      quantity
+      price
+    }
+    
+  }
+}

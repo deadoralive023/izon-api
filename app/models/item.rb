@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   
     # LOGIC
     def total_price
-        self.quantity * self.product.price
+        self.quantity * self.price
     end
 
 end

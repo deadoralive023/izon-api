@@ -4,6 +4,11 @@ module Types
       field :user_id, ID, null: true
 
       field :items, [Types::ItemType], null: true
+      field :sub_total, Float, null: true
+
+      field :items_count, Integer, null: true
+
+
 
       # field :posts, [Types::PostType], null: true
 

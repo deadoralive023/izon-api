@@ -5,6 +5,9 @@ module Types
 
     field :remove_item_from_cart, mutation: Mutations::RemoveItemFromCart
 
+    field :add_item_to_cart, mutation: Mutations::AddItemToCart
+
+
     
     # # TODO: remove me
     # field :test_field, String, null: false,

@@ -117,3 +117,20 @@ mutation{
     clientMutationId
   }
 }
+
+mutation{
+  addItemToCart(input: {
+    productId: 6  
+
+  }) {
+    item{
+      id
+      quantity
+      price
+      product{
+        name 
+        
+      }
+    }
+  }
+}

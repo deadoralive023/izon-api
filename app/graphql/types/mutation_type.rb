@@ -2,6 +2,9 @@ module Types
   class MutationType < Types::BaseObject
 
     field :change_item_quantity, mutation: Mutations::ChangeItemQuantity
+
+    field :remove_item_from_cart, mutation: Mutations::RemoveItemFromCart
+
     
     # # TODO: remove me
     # field :test_field, String, null: false,

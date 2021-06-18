@@ -95,12 +95,10 @@ mutation{
   }
 }
 
-
-
 mutation{
   changeItemQuantity(input: {
     itemId: 1  
-    quantity:77
+    quantity:9
   }){
     item {
       id
@@ -108,5 +106,14 @@ mutation{
       price
     }
     
+  }
+}
+
+mutation{
+  removeItemFromCart(input: {
+    itemId: 4  
+
+  }) {
+    clientMutationId
   }
 }

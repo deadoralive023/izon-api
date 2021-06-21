@@ -1,0 +1,29 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+README.md.*
+
+# rspec failure tracking
+.rspec_status
+/spec/dummy/log/
+/spec/dummy/tmp/
+/Gemfile.lock
+*.gemfile.lock
+*.sqlite3
+*.sqlite3-journal
+/spec/dummy/db/development.sqlite3
+/spec/dummy/db/test.sqlite3
+/*.gem
+
+# rvm config files
+.ruby-version
+.ruby-gemset
+
+.env
+/spec/tmp/config/routes.rb

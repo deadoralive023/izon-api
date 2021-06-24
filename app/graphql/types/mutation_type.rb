@@ -7,8 +7,8 @@ module Types
 
     field :add_item_to_cart, mutation: Mutations::AddItemToCart
 
+    field :create_user, mutation: Mutations::CreateUser
 
-    
     # # TODO: remove me
     # field :test_field, String, null: false,
     #   description: "An example field added by the generator"

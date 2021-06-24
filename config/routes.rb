@@ -1,5 +1,30 @@
 Rails.application.routes.draw do
   mount_graphql_devise_for User, at: 'graphql_auth'
+  
+  # ---------------------------------------------------------
+  # mount_graphql_devise_for(
+  #   User,
+  #   at: 'api/v1',
+  #   authenticatable_type: Types::MyCustomUserType,
+  #   operations: {
+  #     login: Mutations::Login
+  #   },
+  #   skip: [:register],
+  #   additional_mutations: {
+  #     # generates mutation { adminUserSignUp }
+  #     admin_user_sign_up: Mutations::AdminUserSignUp
+  #   },
+  #   additional_queries: {
+  #     # generates query { publicUserByUuid }
+  #     public_user_by_uuid: Resolvers::UserByUuid
+  #   }
+  # )
+
+  # # Providing options to a GraphqlDevise::ResourceLoader
+  # GraphqlDevise::ResourceLoader.new(User, {})
+
+  # ----------------------------------------------------------------------
+  
   post "/graphql", to: "graphql#execute"
 
   if Rails.env.development?

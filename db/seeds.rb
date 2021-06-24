@@ -47,11 +47,9 @@
 #     end
 #   end
 
-  # Cart.create(user_id: 1)
-  # Item.create(quantity: 1, product_id: 1, cart_id: 1, price: 10);
-  # Item.create(quantity: 3, product_id: 2, cart_id: 1, price:45);
+User.create(email:"hamza@gmail.com", name: "hamza", password: "123123");
+Cart.create(user_id: 1)
 
-  User.create(email:"hamza@gmail.com", name: "hamza", password: "123123");
 
 # end
 

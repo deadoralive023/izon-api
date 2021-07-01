@@ -22,7 +22,7 @@ class Mutations::CreateUser < Mutations::BaseMutation
             }
         else
             { 
-                username: nil,
+                user: nil,
                 errors: item.errors.full_messages
             }
         end

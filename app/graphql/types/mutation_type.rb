@@ -8,6 +8,8 @@ module Types
     field :add_item_to_cart, mutation: Mutations::AddItemToCart
 
     field :create_user, mutation: Mutations::CreateUser
+    field :login_user, mutation: Mutations::LoginUser
+
 
     # # TODO: remove me
     # field :test_field, String, null: false,
